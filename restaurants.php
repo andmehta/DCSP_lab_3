@@ -29,16 +29,19 @@ echo "
 		<th>City</th>
 		<th>State</th>
 	</tr>
-</table>"
-$conn = new mysqli($hn, $un, $pw, $db)
+</table>";
+$conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error)
 	die($conn->connect_error);
-while($row = result->fetch_array()){
-	$name = $_GET['name'];
-	$category = $_GET['category'];
-	$cost = $_GET['cost'];
-	$city = $_GET['city'];
-	$state = $_GET['state'];
+
+$query = "SELECT * FROM restaurants";
+$result = $conn->query($query);
+while($row = $result->fetch_array()){
+	$name = $row['name'];
+	$category = $row['category'];
+	$cost = $row['cost'];
+	$city = $row['city'];
+	$state = $row['state'];
 	
 	echo "
 	<table>
