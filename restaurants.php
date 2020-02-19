@@ -15,7 +15,9 @@
 </head>
 
 <body>
+<h1>Current Database</h1>
 
+<p>Our current restaurant database includes the following restaurants.</p>
 <?php
 
 require 'login.php';
