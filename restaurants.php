@@ -30,16 +30,24 @@ echo "
 		<th>State</th>
 	</tr>
 </table>"
-for(int i = 0; i < 7; i++) {
+$conn = new mysqli($hn, $un, $pw, $db)
+if($conn->connect_error)
+	die($conn->connect_error);
+while($row = result->fetch_array()){
+	$name = $_GET['name'];
+	$category = $_GET['category'];
+	$cost = $_GET['cost'];
+	$city = $_GET['city'];
+	$state = $_GET['state'];
 	
 	echo "
 	<table>
 		<tr>
-			<td>$restaurant->getName();</td>
-			<td>$restaurant->getCategory();</td>
-			<td>$restaurant->getCost();</td>
-			<td>$restaurant->getCity();</td>
-			<td>$restaurant->getState();</td>
+			<td>$name;</td>
+			<td>$category;</td>
+			<td>$cost;</td>
+			<td>$city</td>
+			<td>$state;</td>
 		</tr>
 	</table>";
 }
