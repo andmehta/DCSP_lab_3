@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
+<head><title>By City</title>
 
 	<style>
 		td, th {
