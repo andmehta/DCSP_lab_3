@@ -44,15 +44,15 @@ while($row = $result->fetch_array()){
 	$cost = $row['cost'];
 	$city = $row['city'];
 	$state = $row['state'];
-	
+
 	echo "
 	<table>
 		<tr>
-			<td>$name;</td>
-			<td>$category;</td>
-			<td>$cost;</td>
+			<td>$name</td>
+			<td>$category</td>
+			<td>$cost</td>
 			<td>$city</td>
-			<td>$state;</td>
+			<td>$state</td>
 		</tr>
 	</table>";
 }

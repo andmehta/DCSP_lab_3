@@ -1,6 +1,6 @@
 <?php
-	$hn = 'localhost';  
-	$un = 'am3258';
-	$pw = 'myphpMyAdminPassword';  // phpMyAdmin password
-	$db = 'am3258';  // database name, should be netID
+	$hn = 'localhost';
+	$un = 'jsm652';
+	$pw = 'IkrSUDivGT0Hd50F';  // phpMyAdmin password
+	$db = 'jsm652';  // database name, should be netID
 ?>
