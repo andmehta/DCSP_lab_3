@@ -38,7 +38,7 @@ $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error)
 	die($conn->connect_error);
 
-$query = "SELECT * FROM restaurants WHERE city = " . $City;
+$query = "SELECT * FROM restaurants WHERE city = " . "\"" . $City ."\"";
 $result = $conn->query($query);
 while($row = $result->fetch_array()){
 	$name = $row['name'];
@@ -46,15 +46,15 @@ while($row = $result->fetch_array()){
 	$cost = $row['cost'];
 	$city = $row['city'];
 	$state = $row['state'];
-	
+
 	echo "
 	<table>
 		<tr>
-			<td>$name;</td>
-			<td>$category;</td>
-			<td>$cost;</td>
+			<td>$name</td>
+			<td>$category</td>
+			<td>$cost</td>
 			<td>$city</td>
-			<td>$state;</td>
+			<td>$state</td>
 		</tr>
 	</table>";
 }
